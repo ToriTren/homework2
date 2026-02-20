@@ -1,0 +1,53 @@
+html {
+    font-family: Ubuntu, Oswald, sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+.conteiner {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+.header__conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+
+.header__menu__list {
+    display: flex;
+    column-gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.header__menu__link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #535151;
+}
+
+.header__tel {
+    color: #535151;;
+}
+
