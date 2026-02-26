@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #8b8686;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555555;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+textarea {
+  min-height: 50px;
+  max-height: 200px;
+  resize: vertical;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.checkbox-fieldset {
+  gap: 10px;
+  border: none;
+  padding: 0;
+}
+
+.checkbox-fieldset input[type="checkbox"] {
+  margin-top: 5px;
+  width: 18px;
+  height: 18px;
+}
+
+.label {
+  margin-bottom: 0;
+  padding-top: 5px;
+  font-weight: normal;
+  cursor: pointer;
+  padding-left: 30px;
+}
+
+.checkbox {
+  position: absolute;
+  appearance: none;
+  outline: none;
+}
+
+.checkbox::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #0e6110;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.checkbox:checked::after {
+  background: url("/src/images/check-icon.svg") no-repeat center, #0e6110;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #0e6110;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.submit-btn:hover {
+  opacity: 0.90;
+}
+
+.submit-btn:active {
+  background-color: #083608;
+}
+
+.input:focus-visible,
+.textarea:focus-visible,
+.submit-btn:focus-visible,
+.checkbox:focus-visible::after {
+  outline: 2px solid #0e6110;
+  outline-offset: 1px;
+}
