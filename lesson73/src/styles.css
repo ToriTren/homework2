@@ -100,7 +100,7 @@ textarea {
 }
 
 .checkbox:checked::after {
-  background: url("/src/images/check-icon.svg") no-repeat center, #0e6110;
+  background: url("images/check-icon.svg") no-repeat center, #0e6110;
 }
 
 .submit-btn {
