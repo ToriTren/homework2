@@ -106,10 +106,11 @@
     display: inline-block;
     width: 22px;
     height: 9px;
-    background-image: url(/images/arrow-right-icon.svg);
+    background-image: url(../images/arrow-right-icon.svg);
     transition: transform 0.2s ease;
 }
 
 .news-link:hover::after{
     transform: translateX(5px);
+
 }
