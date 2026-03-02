@@ -112,5 +112,4 @@
 
 .news-link:hover::after{
     transform: translateX(5px);
-
 }
