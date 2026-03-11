@@ -1,0 +1,259 @@
+.hero {
+  position: relative;
+  padding-top: 80px;
+}
+
+.hero::before {
+  bottom: 106px;
+  width: 100%;
+}
+
+.hero__container {
+  display: flex;
+  gap: 28px;
+}
+
+.hero__info {
+  max-width: 492px;
+}
+
+.hero__title {
+  margin-bottom: 40px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 62px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+}
+
+.hero-title strong {
+  font-weight: 600;
+  color: #3596ed;
+}
+
+.hero__text {
+  margin-bottom: 140px;
+  max-width: 440px;
+}
+
+.hero__images-text {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 161px;
+  border: 1px solid #535755;
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+.hero__images {
+  position: relative;
+  display: flex;
+}
+
+.news__container {
+  display: flex;
+  gap: 28px;
+}
+
+.news__article {
+  display: flex;
+  flex-direction: column;
+  max-width: 284px;
+  flex: 1 1 25%;
+  background-color: #fff;
+  border: 1px solid #d3cbd9;
+  overflow: hidden;
+}
+
+.news__article-img {
+  display: block;
+}
+
+.news__article-info {
+  padding: 20px 20px 0px;
+  margin-bottom: 12px;
+}
+
+.news__article-footer {
+  margin-top: auto;
+  padding: 0 20px 20px;
+}
+
+.news__date {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.news__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #3596ed;
+}
+
+.news-link::after {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 9px;
+  background-image: url(../images/arrow-right-icon.svg);
+  transition: transform 0.2s ease;
+}
+
+.news-link:hover::after {
+  transform: translateX(5px);
+}
+
+.faq {
+  position: relative;
+}
+
+.faq::before {
+  top: 215px;
+}
+
+.faq__container {
+  display: flex;
+  gap: 28px;
+}
+
+details {
+  margin-bottom: 20px;
+  border-block: 1px solid #d3cbd9;
+}
+
+details:last-child {
+  margin-bottom: 0;
+}
+
+details[open] summary::after {
+  transform: rotate(180deg);
+}
+
+summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  list-style: none;
+  padding: 20px;
+  cursor: pointer;
+}
+
+summary::after {
+  content: "";
+  display: inline-block;
+  flex-shrink: 0;
+  width: 17px;
+  height: 22px;
+  background: url(../images/arrow-down-icon.svg) no-repeat center / cover;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq__text {
+  padding: 0 20px 20px;
+}
+
+/* MEDIA 1440 */
+
+@media (width <= 1440px) {
+  .hero-images img {
+    width: 50%;
+  }
+}
+
+/* MEDIA 992 */
+
+@media (width <= 992px) {
+  .hero__container {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .hero::after {
+    display: none;
+  }
+
+  .hero__info {
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: 52px;
+    margin-bottom: 30px;
+  }
+
+  .hero__text {
+    max-width: inherit;
+    margin-bottom: 30px;
+  }
+
+  .news__container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .news__article {
+    flex-basis: 50%;
+    max-width: 350px;
+  }
+
+  .news__article-img {
+    width: 100%;
+  }
+
+  .faq__container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .faq::before {
+    display: none;
+  }
+}
+
+/* MEDIA 768 */
+
+@media (width <= 768px) {
+  .hero__title {
+    font-size: 48px;
+  }
+
+  .news__article {
+    flex-basis: 100%;
+    max-width: 400px;
+  }
+}
+
+/* MEDIA 576 */
+
+@media (width <= 576px) {
+  .hero {
+    padding-top: 60px;
+  }
+  .hero__title {
+    font-size: 40px;
+  }
+
+  .hero__info {
+    max-width: 410px;
+  }
+
+  .hero__images-text {
+    max-width: 125px;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
