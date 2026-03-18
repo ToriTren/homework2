@@ -43,8 +43,7 @@
     box-shadow: -2px 0 20px var(--shadow-color);
     opacity: 0;
     visibility: hidden;
-    transition: right var(--transition-time), opacity var(--transition-time),
-      visibility var(--transition-time);
+    transition: right var(--transition-time), opacity var(--transition-time), visibility var(--transition-time);
   }
 
   .header__menu--open {
