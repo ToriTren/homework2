@@ -1,0 +1,119 @@
+.packs {
+    margin-bottom: 76px;
+}
+
+@media (max-width: 768px) {
+  .packs {
+    margin-bottom: 56px;
+  }
+}
+
+.packs__title,
+.packs__text {
+  text-align: center;
+  margin-inline: auto;
+}
+
+.packs__title {
+  font-family: var(--second-family);
+  font-size: 42px;
+  line-height: 1.25;
+  text-align: center;
+  margin-bottom: 9px;
+}
+
+@media (max-width: 576px) {
+  .packs__title {
+    font-size: 32px;
+  }
+}
+
+.packs__text{
+  margin-bottom: 56px;
+}
+
+.packs__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+@media (max-width: 992px) {
+  .packs__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .packs__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.packs__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* горизонтальный центр */
+    justify-content: center;
+    background-color: var(--color-grey);
+    border-radius: 16px;
+}
+
+@media (max-width: 640px) {
+  .packs__card {
+    padding-inline: 16px;
+  }
+}
+
+.packs__card-text {
+    margin-top: 41px;
+    font-family: var(--font-secondary);
+    font-size: 13px;
+    line-height: 1.29;
+}
+
+.packs__card-title {
+    font-family: var(--font-secondary);
+    font-size: 28px;
+    line-height: 1.25;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+  .packs__card-title {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+.packs__card-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 14px 63px;
+  margin-bottom: 30px;
+  color: var(--color-dark);
+  text-decoration: none;
+  border: 1px solid var(--color-dark);
+  border-radius: 200px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: capitalize;
+  transition: background 0.2s, transform 0.1s;
+}
+
+@media (max-width: 576px) {
+  .packs__card-button {
+    width: 100%;
+    max-width: 220px;
+    padding-inline: 32px;
+  }
+}
+
+.packs__card-button:hover {
+  background: #273631;
+  color: var(--color-light);
+  transform: translateY(-1px);
+}
