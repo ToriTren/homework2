@@ -1,0 +1,64 @@
+.page {
+  font-family: var(--font-main);
+  font-weight: 400;
+  color: var(--color-dark);
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+  scrollbar-gutter: stable;
+}
+
+.page__body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-light);
+  padding-top: 108px;
+}
+
+@media (max-width: 768px) {
+  .page__body {
+    padding-top: 88px;
+  }
+}
+
+.page__body--no-scroll {
+  overflow-y: hidden;
+}
+
+.main {
+  flex: 1;
+}
+
+.main,
+.footer {
+  transition: filter var(--transition-time);
+}
+
+.page__body--menu-open .main,
+.page__body--menu-open .footer {
+  filter: blur(5px);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.container {
+  width: min(var(--container-width), 100% - var(--container-padding) * 2);
+  margin-inline: auto;
+}
+
+img {
+  object-fit: cover;
+}
+
+
+

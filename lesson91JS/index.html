@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="shortcut icon" href="./icons/favicon-32x32.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+    <script src="./js/index.js" type="module"></script>
+    <title>California</title>
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo header__logo" href="#">
+          <img class="logo__img" src="./icons/logo.svg" width="170" height="21" alt="Logo California"/>
+        </a>
+        <nav class="menu header__menu" id="header__menu" aria-label="Website menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">all products</a>
+            </li>
+            <li class="menu__item menu__item--solutions">
+              <a class="menu__link menu__link--solutions" href="#">Solutions</a>
+                <ul class="menu__dropdown">
+                  <li class="menu__dropdown-item"><a class="menu__link" href="#">Work</a></li>
+                  <li class="menu__dropdown-item"><a class="menu__link" href="#">Creativity</a></li>
+                  <li class="menu__dropdown-item"><a class="menu__link" href="#">Everyday</a></li>
+                </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">About</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Support</a>
+            </li>
+          </ul>
+        </nav>
+        
+          <div class="header__actions">
+            <button class="header__actions-button header__search-button" type="button" title="Search" aria-label="Search" aria-controls="searchModal" aria-expanded="false">
+              <svg width="24" height="24">
+                <use class="header__actions-icon" href="./icons/sprite.svg#search"></use>
+              </svg>
+            </button>
+            <button class="header__actions-button" title="Cart" aria-label="Cart">
+              <svg width="24" height="24">
+                <use class="header__actions-icon" href="./icons/sprite.svg#cart"></use>
+              </svg>
+            </button>
+            <button class="header__burger burger" aria-label="Open Menu" aria-expanded="false" aria-controls="header__menu">
+              <svg width="24" height="24">
+                <use class="burger__icon-menu" href="./icons/sprite.svg#burger"></use>
+                <use class="burger__icon-cross" href="./icons/sprite.svg#cross"></use>
+              </svg>
+            </button>
+          </div>
+      </div>
+    </header>
+
+    <div class="search-modal" id="searchModal" role="dialog" aria-modal="true" hidden>
+      <div class="search-modal__overlay" data-search-close></div>
+
+      <div class="search-modal__content">
+        <button class="search-modal__close" type="button" aria-label="Close search" data-search-close>
+          <svg width="24" height="24">
+            <use href="./icons/sprite.svg#cross"></use>
+          </svg>
+        </button>
+
+        <h2 class="search-modal__title">Search products</h2>
+
+        <form class="search-modal__form" action="#" role="search">
+          <label class="search-modal__field">
+            <svg class="search-modal__icon" width="24" height="24">
+              <use href="./icons/sprite.svg#search"></use>
+            </svg>
+            <input class="search-modal__input" type="search" id="headerSearchInput" placeholder="Search keyword">
+          </label>
+
+          <button class="search-modal__submit" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+
+    <main class="main">
+      <section class="hero">
+        <div class="container hero__container">
+          <h1 class="visually-hidden">Apple Products and Other Top Brands at the Best Prices</h1>
+            <div class="swiper hero__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="hero__product-card">
+                    <div class="hero__card-content">
+                      <h3 class="hero__card-title">The new phones are here take a look.</h3>
+                      <p class="hero__card-text">Experience speed, power, and stunning design in every detail. Built to elevate the way you capture, create, and connect.</p>
+                      <a class="hero__card-button" href="#">explore</a>
+                    </div>
+                    <div class="hero__card-image">
+                      <picture>
+                        <source srcset="./images/hero-slider/iphone-slide1.webp" type="image/webp">
+                        <img src="./images/hero-slider/iphone-slide1.png" alt="Iphone" loading="lazy">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__product-card">
+                    <div class="hero__card-content">
+                      <h3 class="hero__card-title">MacBook Neo.<br> Power reimagined.</h3>
+                      <p class="hero__card-text">Ultra-light. Incredibly fast. Designed to handle everything — from everyday tasks to pro-level workflows.</p>
+                      <a class="hero__card-button" href="#">discover</a>
+                    </div>
+                    <div class="hero__card-image">
+                      <picture>
+                        <source srcset="./images/hero-slider/macbook-neo-slide2.webp" type="image/webp">
+                        <img src="./images/hero-slider/macbook-neo-slide2.png" alt="Macbook Neo" loading="lazy">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__product-card">
+                    <div class="hero__card-content">
+                      <h3 class="hero__card-title">Apple Watch.<br> Stay connected. Stay active.</h3>
+                      <p class="hero__card-text">Your health, fitness, and notifications — always on your wrist. Smarter ways to move, track, and stay in control.</p>
+                      <a class="hero__card-button" href="#">learn more</a>
+                    </div>
+                    <div class="hero__card-image">
+                      <picture>
+                        <source srcset="./images/hero-slider/apple-watch-slide3.webp" type="image/webp">
+                        <img src="./images/hero-slider/apple-watch-slide3.png" alt="Apple Watch" loading="lazy">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+      </section>
+      <section class="categories">
+        <div class="container categories__conteiner">
+          <h2 class="categories__title">Shop our latest offers and categories</h2>
+          <p class="categories__text">Discover our latest offers and explore updated product categories. Shop the best from a wide selection, place orders in just a few clicks, and enjoy fast, reliable delivery. We refresh our catalog regularly so you always find exactly what you're looking for.</p>
+        
+          <div class="categories__grid-conteiner">
+            <a class="categories__grid-item item-laptop" href="#">
+              <picture>
+                <source srcset="./images/categories/laptop.webp" type="image/webp">
+                <img class="categories__grid-image image-laptop" src="./images/categories/laptop.png" width="500" height="377" alt="Macbook Pro" loading="lazy">
+              </picture>
+                <div class="categories__grid-content">
+                  <h4 class="categories__grid-title">Laptops</h4>
+                  <p class=" categories__grid-text categories__grid-text-laptops">True Laptop Solution</p>
+                </div>
+            </a>
+            <a class="categories__grid-item item-watch" href="#">
+              <picture>
+                <source srcset="./images/categories/watch.webp" type="image/webp">
+                <img class="categories__grid-image image-watch" src="./images/categories/watch.png" width="381" height="270" alt="Watch" loading="lazy">
+              </picture>
+                <div class="categories__grid-content">
+                  <h4 class="categories__grid-title">Watch</h4>
+                  <p class="categories__grid-text">Not just stylish</p>
+                </div>
+            </a>
+            <a class="categories__grid-item item-phone" href="#">
+              <picture>
+                <source srcset="./images/categories/phone.webp" type="image/webp">
+                <img class="categories__grid-image" src="./images/categories/phone.png" width="405" height="367" alt="Phones" loading="lazy">
+              </picture>
+                <div class="categories__grid-content">
+                  <h4 class="categories__grid-title">Phones</h4>
+                  <p class="categories__grid-text categories__grid-text-phones">Your day to day life</p>
+                </div>
+            </a>  
+            <a class="categories__grid-item item-tablet" href="#">
+              <picture>
+                <source srcset="./images/categories/tablet.webp" type="image/webp">
+                <img class="categories__grid-image" src="./images/categories/tablet.png" width="467" height="425" alt="Tablets" loading="lazy">
+              </picture>
+                <div class="categories__grid-content">
+                  <h4 class="categories__grid-title">Tablet</h4>
+                  <p class="categories__grid-text categories__grid-text-tablet">Empower your work</p>
+                </div>
+            </a> 
+          </div>
+        </div>
+      </section>
+      <section class="product">
+        <div class="container">
+          <h2 class="product__title">Save on our most selled items.</h2>
+          <p class="product__text">Our new Limited Edition Winter Design BESPOKE 4-Door Fle&trade;</p>
+          <div class="product__grid">
+            <a class="product__card" href="#" aria-label="View MacBook Pro 13">
+              <picture>
+                <source srcset="./images/product/mac-book-pro-13.webp" type="image/webp">
+                <img class="product__card-image" src="./images/product/mac-book-pro-13.png" width="247" height="214" loading="lazy">
+              </picture>
+              <div class="product__card-content">
+                <h5 class="product__card-title">MacBook Pro 13</h5>
+                <p class="product__card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                <div class="product__price-block" itemscope itemtype="https://schema.org/Offer">
+                  <span itemprop="price" content="1200.00" class="price">1,000.00 $</span>
+                </div>
+              </div>
+            </a>
+            <a class="product__card" href="#" aria-label="View Smart Galaxy Watch 3">
+              <picture>
+                <source srcset="./images/product/galaxy-watch.webp" type="image/webp">
+                <img class="product__card-image" src="./images/product/galaxy-watch.png" width="247" height="214" loading="lazy">
+              </picture>
+              <div class="product__card-content">
+                <h5 class="product__card-title">Smart Galaxy Watch 3</h5>
+                <p class="product__card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                <div class="product__price-block" itemscope itemtype="https://schema.org/Offer">
+                  <span itemprop="price" content="1200.00" class="price">199.00 $</span>
+                </div>
+              </div>
+            </a>
+            <a class="product__card" href="#" aria-label="View MacBook Air M1">
+              <picture>
+                <source srcset="./images/product/macbook-air-m1.webp" type="image/webp">
+                <img class="product__card-image" src="./images/product/macbook-air-m1.png" width="247" height="214" loading="lazy">
+              </picture>
+              <div class="product__card-content">
+                <h5 class="product__card-title">MacBook Air M1</h5>
+                <p class="product__card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                <div class="product__price-block" itemscope itemtype="https://schema.org/Offer">
+                  <span itemprop="price" content="1200.00" class="price">1,009.00 $</span>
+                </div>
+              </div>
+            </a>
+            <a class="product__card" href="#" aria-label="View iPad">
+              <picture>
+                <source srcset="./images/product/ipad.webp" type="image/webp">
+                <img class="product__card-image" src="./images/product/ipad.png" width="247" height="214" loading="lazy">
+              </picture>
+              <div class="product__card-content">
+                <h5 class="product__card-title">iPad</h5>
+                <p class="product__card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                <div class="product__price-block" itemscope itemtype="https://schema.org/Offer">
+                  <span itemprop="price" content="1200.00" class="price">610.00 $</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="packs">
+        <div class="container">
+          <h2 class="packs__title">See the best around here</h2>
+          <p class="packs__text">Our new Limited Edition Winter Design BESPOKE 4-Door Flex&trade;</p>
+          <div class="packs__grid">
+            <div class="packs__card">
+              <p class="packs__card-text">Smart light bulb pack</p>
+              <h5 class="packs__card-title">Latest and gratest</h5>
+              <a class="packs__card-button" href="#">Explore</a>
+              <picture>
+                <source srcset="./images/packs/apple-watch.webp" type="image/webp">
+                <img class="product__card-image" src="./images/packs/apple-watch.png" width="259" height="250" loading="lazy">
+              </picture>
+            </div>
+            <div class="packs__card">
+              <p class="packs__card-text">Smart light bulb pack</p>
+              <h5 class="packs__card-title">Best selling</h5>
+              <a class="packs__card-button" href="#">Explore</a>
+              <picture>
+                <source srcset="./images/packs/macbook-iphone-watch.webp" type="image/webp">
+                <img class="product__card-image" src="./images/packs/macbook-iphone-watch.png" width="294" height="250" loading="lazy">
+              </picture>
+            </div>
+            <div class="packs__card">
+              <p class="packs__card-text">Smart light bulb pack</p>
+              <h5 class="packs__card-title">Every product</h5>
+              <a class="packs__card-button" href="#">Explore</a>
+              <picture>
+                <source srcset="./images/packs/macbook-iphone.webp" type="image/webp">
+                <img class="product__card-image" src="./images/packs/macbook-iphone.png" width="355" height="250" loading="lazy">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ideas">
+        <div class="container">
+          <h2 class="ideas__title">Ideas have a place here</h2>
+          <p class="ideas__text">Our new Limited Edition Winter Design BESPOKE 4-Door Flex&trade;</p>
+          <div class="ideas__wrapper">
+            <picture>
+                <source srcset="./images/ideas/ideas-book-img.webp" type="image/webp">
+                <img class="ideas__image" src="./images/ideas/ideas-book-img.png" width="620" height="420" loading="lazy">
+              </picture>
+            <div class="ideas__content">
+              <p class="ideas__content-text">We Make It Easy To Find The Great Design Talent, Easier...</p>
+              <p class="ideas__content-text">Road Design Handbook For The International Road...</p>
+              <p class="ideas__content-text">The Best Kept Secrets About Creative People</p>
+              <p class="ideas__content-text">We Make It Easy To Find The Great Design Talent, Easier...</p>
+            </div>
+          </div>
+          <a class="ideas__link" href="#">See all 
+            <svg class="ideas__link-icon" width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.31464 20.4816L21.9444 6.82715" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M7.31464 6.82715H21.9444V20.4816" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </section>
+      <section class="search">
+        <div class="container">
+          <h2 class="search__title">Looking for anything else?</h2>
+          <div class="search__container">
+            <div class="search__input-wrapper">
+                <svg class="search__icon" width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.75 22.9583C19.2729 22.9583 23.75 18.6304 23.75 13.2917C23.75 7.95291 19.2729 3.625 13.75 3.625C8.22715 3.625 3.75 7.95291 3.75 13.2917C3.75 18.6304 8.22715 22.9583 13.75 22.9583Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M26.2499 25.3749L20.8124 20.1187" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <input class="search__input" type="text" id="searchInput" placeholder="Search keyword">
+            </div>
+            <div class="search__tags-wrapper">
+              <button class="tag">iPhone</button>
+              <button class="tag">Charger</button>
+              <button class="tag">Gift</button>
+              <button class="tag">Google Pixel 3</button>
+              <button class="tag">Keyboard</button>
+              <button class="tag">13 Pro Max</button>
+              <button class="tag">iPhone 12</button>
+              <button class="tag">Laptop</button>
+              <button class="tag">Mobile</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="singup">
+        <div class="container">
+          <div class="singup__wrapper">
+            <h2 class="singup__title">Never miss a thing</h2>
+            <p class="singup__text">Sign up for texts to be notified about our best offers on the perfect gifts.</p>
+            <picture>
+                <source srcset="./images/singup/singup-image.webp" type="image/webp">
+                <img class="singup__image" src="./images/singup/singup-image.png" width="233" height="200" loading="lazy">
+            </picture>
+            <form class="signup__form">
+              <input type="email" placeholder="Your email" required>
+              <button  class="singup__button" type="submit">Sign up</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__body">
+          <div class="footer__body-inner">
+            <div class="footer__body-logo">
+              <a class="logo footer__logo" href="#">
+                <img class="logo__img" src="./icons/logo.svg" width="181" height="22" alt="Logo California"/>
+              </a>
+              <p class="footer__text">Sign up for texts to be notified about our best offers on the perfect gifts.</p>
+            </div>
+            <nav class="footer__menu">
+              <div class="footer__menu-column">
+                <h5 class="footer__menu-title">All products</h5>
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">Phones</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">Watch</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">Tablet</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">Laptops</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__menu-column">
+                <h5 class="footer__menu-title">Company</h5>
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">About</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">Support</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__menu-column">
+                <h5 class="footer__menu-title">Support</h5>
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">Style Guide</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">Licensing</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">Tablet</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__menu-column">
+                <h5 class="footer__menu-title">Follow Us</h5>
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">Instagram</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">Facebook</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">LinkedIn</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">Youtube</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="footer__extra">
+          <hr class="footer__extra-line">
+          <p class="footer__extra-text"><span>Made By:</span> Tori DEV
+            <svg class="footer__extra-arrow" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1_354)">
+            <path d="M1.61539 16.6155L19.3846 1.38477" stroke="#08090D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M1.61539 1.38477H19.3846V16.6155" stroke="#08090D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_1_354">
+            <rect width="21" height="18" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
